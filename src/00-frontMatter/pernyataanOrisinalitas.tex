@@ -6,50 +6,54 @@
 % @edit by Muhammad Aulia Adil Murtito, Ichlasul Affan
 %
 
+% Membuat chapter tanpa nomor dengan judul "HALAMAN PERNYATAAN ORISINALITAS"
 \chapter*{\uppercase{Halaman Pernyataan Orisinalitas}}
 \vspace*{2cm}
 
-% Untuk input gambar tanda tangan, silahkan sesuaikan xshift, yshift, dan width dengan gambar tanda tangan Anda
-%\begin{tikzpicture}[remember picture,overlay,shift={(current page.north east)}]
-%\node[anchor=north east,xshift=-8.5cm,yshift=-14.2cm]{\includegraphics[width=3cm]{assets/pics/tanda_tangan_wikipedia.png}};
-%\end{tikzpicture}
+% Mengatur style halaman untuk menampilkan nomor halaman saja
 \pagestyle{onlypage}
 
 \begin{center}
 	\doublespacing
-	\bo{\type~ini adalah hasil karya~\ifx\blank\npmDua{saya}\else{kami}\fi~sendiri, \\
-	dan semua sumber baik yang dikutip maupun dirujuk \\
-	telah~\ifx\blank\npmDua{saya}\else{kami}\fi~nyatakan dengan benar.} \\
+	\bo{Skripsi ini adalah hasil karya kami sendiri dan semua sumber baik yang dikutip \\
+	maupun dirujuk telah kami nyatakan dengan benar.} \\
 	\vspace*{2.6cm}
 	\setstretch{1.4}
 
-	\begin{tabular}{l c l}
-	\ifx\blank\npmDua
-	\bo{Nama} & : & \bo{\penulisSatu} \\
-	\bo{NPM} & : & \bo{\npmSatu} \\
-	\bo{Tanda Tangan} & : & \\
-	& & \\
-	& & \\
-	\else
-	\bo{Nama Penulis 1} & : & \bo{\penulisSatu} \\
-	\bo{NPM Penulis 1} & : & \bo{\npmSatu} \\
-	\bo{Tanda Tangan Penulis 1} & : & \\
-	& & \\
-	& & \\
-	\bo{Nama Penulis 2} & : & \bo{\penulisDua} \\
-	\bo{NPM Penulis 2} & : & \bo{\npmDua} \\
-	\bo{Tanda Tangan Penulis 2} & : & \\
-	& & \\
-	& & \\
-	\fi
-	\ifx\blank\npmTiga\else
-	\bo{Nama Penulis 3} & : & \bo{\penulisTiga} \\
-	\bo{NPM Penulis 3} & : & \bo{\npmTiga} \\
-	\bo{Tanda Tangan Penulis 3} & : & \\
-	& & \\
-	& & \\
-	\fi
-	\bo{Tanggal} & : & \bo{\tanggalSiapSidang} \\
+	% Membuat tabel dengan border untuk informasi penulis - format satu tabel besar
+	% Menggunakan template UI untuk konsistensi formatting
+	\begin{tabular}{|l|l|}
+	\hline % Membuat garis horizontal
+	% Informasi Penulis 1 - menghapus underline pada nama
+	\bo{Penulis 1} & : Alisya Andiny Alhabsyi \\ % Nama tanpa underline
+	\bo{NPM} & : 2106706281 \\
+	\bo{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	\bo{Tanggal} & : \\
+	\hline % Garis pemisah antar penulis
+	% Informasi Penulis 2
+	\bo{Penulis 2} & : Dylan Adiprawira \\
+	\bo{NPM} & : 2106750446 \\
+	\bo{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	\bo{Tanggal} & : \\
+	\hline % Garis pemisah antar penulis
+	% Informasi Penulis 3
+	\bo{Penulis 3} & : Hanin Atina Rahmania \\
+	\bo{NPM} & : 2106751234 \\
+	\bo{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	\bo{Tanggal} & : \\
+	\hline % Garis penutup tabel
 	\end{tabular}
 \end{center}
 
