@@ -1,0 +1,77 @@
+%
+% Standalone test file for Pernyataan Orisinalitas
+%
+\documentclass[12pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{times} % Menggunakan Times New Roman font
+
+% Define some basic commands that might be used
+\newcommand{\bo}[1]{\textbf{#1}}
+
+\begin{document}
+
+% Membuat judul dengan font 14pt bold Times New Roman
+\begin{center}
+    {\fontsize{14}{16}\selectfont\textbf{HALAMAN PERNYATAAN ORISINALITAS}}
+\end{center}
+
+\vspace*{1cm} % Menambah jarak vertikal 1cm
+
+% Pernyataan orisinalitas yang terpusat - font 12pt Times New Roman (tidak bold)
+\begin{center}
+	{\fontsize{12}{14}\selectfont 
+	Skripsi ini adalah hasil karya kami sendiri dan semua sumber baik yang dikutip \\
+	maupun dirujuk telah kami nyatakan dengan benar.}
+\end{center}
+
+\vspace*{1cm} % Menambah jarak vertikal 1cm
+
+% Membuat tabel dengan border untuk informasi penulis - format satu tabel besar
+% |l|l| artinya 2 kolom dengan alignment left dan border vertikal
+\begin{center}
+	{\fontsize{12}{14}\selectfont % Set font size 12pt untuk tabel
+	\begin{tabular}{|l|l|}
+	\hline % Membuat garis horizontal
+	% Informasi Penulis 1 - menghapus underline pada nama
+	\textbf{Penulis 1} & : Alisya Andiny Alhabsyi \\ % Nama tanpa underline
+	\textbf{NPM} & : 2106706281 \\
+	\textbf{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	& \\
+	\textbf{Tanggal} & : \\
+	\hline % Garis pemisah antar penulis
+	% Informasi Penulis 2
+	\textbf{Penulis 2} & : Dylan Adiprawira \\
+	\textbf{NPM} & : 2106750446 \\
+	\textbf{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	& \\
+	\textbf{Tanggal} & : \\
+	\hline % Garis pemisah antar penulis
+	% Informasi Penulis 3
+	\textbf{Penulis 3} & : Hanin Atina Rahmania \\
+	\textbf{NPM} & : 2106751234 \\
+	\textbf{Tanda tangan} & : \\
+	& \\ % Baris kosong untuk tempat tanda tangan
+	& \\
+	& \\
+	& \\
+	& \\
+	\textbf{Tanggal} & : \\
+	\hline % Garis penutup tabel
+	\end{tabular}
+	}
+\end{center}
+
+\end{document}
